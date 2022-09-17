@@ -1,0 +1,31 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+ }
+ 
+ .grid {
+   display: block;
+   padding: 16px;
+   grid-gap: 16px;
+ 
+ @media (min-width: 768px) {
+   .grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }
+ @media (min-width: 960px) {
+   .grid {
+     grid-template-columns: repeat(3, 1fr);
+   }
+ }
+ @media (min-width: 1200px) {
+   .grid {
+     grid-template-columns: repeat(4, 1fr);
+   }
+ }
+ .grid .col {
+   background-color: coral;
+   padding: 16px;
+ }
